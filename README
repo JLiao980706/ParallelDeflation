@@ -1,0 +1,26 @@
+This is the codebase for the paper titled: 
+
+Efficient Distributed Principal Component Analysis with Parallel Deflation.
+
+Software requirement: 
+    Python 3.8.1
+    Numpy 1.21.0
+    Matplotlib 3.1.2
+
+Directory structure: 
+    "centralized_solver.py" contains implementation of the parallel deflation 
+        with power iteration and Hebb's rule, EigenGame-alpha, and EigenGame-mu
+    "utils.py" contains code for generating synthetic matrix and evaluation.
+    "DeterministicExp-Abl.ipynb" contains code to run the ablation study.
+    "DeterministicExp-ExpDecay.ipynb" contains code to run the experiments on
+        the synthetic matrix with exponentially decaying eigenvalues.
+    "DeterministicExp-Powerlaw.ipynb" contains code to run the experiments on
+        the synthetic matrix with powerlaw decaying eigenvalues.
+    "DeterministicExp-MNIST.ipynb" contains code to run the experiments on the
+        MNIST dataset.
+    "PlotResults.ipynb" contains the code to plot all the results.
+
+Instruction to Run:
+    First download the MNIST dataset into the MNIST folder.
+    Then run all notebook except for "PlotResults.ipynb"
+    Lastly, run "PlotResults.ipynb" to reproduce all the figures.
